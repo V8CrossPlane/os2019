@@ -12,5 +12,3 @@ Student Info
 
 * Name: Tưởng Duy Linh
 * ID: Bi8-099
-
-
