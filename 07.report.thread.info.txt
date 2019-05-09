@@ -1,0 +1,5 @@
+rick@rick-linux:~$ ps -o nlwp 30949
+NLWP
+  62
+rick@rick-linux:~$ ls /proc/30949/task | wc -w
+58
