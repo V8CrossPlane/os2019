@@ -1,4 +1,4 @@
-USTH ICT 2019 Operating Systems
+﻿USTH ICT 2019 Operating Systems
 =====================================
 
 Students are expected to:
@@ -10,5 +10,5 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Tưởng Duy Linh
+* Name: Tưởng Duy Linh 
 * ID: Bi8-099
