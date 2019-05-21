@@ -1,0 +1,20 @@
+rick@rck-virtual-machine:~$ ls -la | grep list
+rick@rck-virtual-machine:~$ wc -l /etc/passwd
+44 /etc/passwd
+rick@rck-virtual-machine:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        4015496     1122264     1195156       19324     1698076     2588172
+Swap:       1459804           0     1459804
+rick@rck-virtual-machine:~$ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  1
+Socket(s):           4
+=>>>>> In my computer has 8 logicals
+
+rick@rck-virtual-machine:~$ find /home/rick/Pictures -name "*.jpg" | wc -l
+0
