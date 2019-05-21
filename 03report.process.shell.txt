@@ -1,0 +1,30 @@
+rick@rick-linux:~$ ps man
+   PID TTY      STAT   TIME COMMAND
+  1884 tty2     -      0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_S
+     - -        Ssl+   0:00 -
+     - -        Ssl+   0:00 -
+     - -        Ssl+   0:00 -
+  1886 tty2     -      0:07 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/
+     - -        Sl+    0:06 -
+     - -        Sl+    0:00 -
+  3423 pts/0    -      0:00 bash
+     - -        Ss     0:00 -
+  3431 pts/0    -      0:00 gnome-calculator
+     - -        Sl+    0:00 -
+     - -        Sl+    0:00 -
+     - -        Sl+    0:00 -
+     - -        Sl+    0:00 -
+  3546 pts/1    -      0:00 bash
+     - -        Ss     0:00 -
+  3568 pts/1    -      0:00 ps man
+     - -        R+     0:00 -
+rick@rick-linux:~$ ps man | grep gnome-calculator
+  3431 pts/0    -      0:00 gnome-calculator
+  3641 pts/1    -      0:00 grep --color=auto gnome-calculator
+rick@rick-linux:~$ cat /proc/3431/status
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+rick@rick-linux:~$ kill -s STOP  3431
+rick@rick-linux:~$ kill -s CONT  3431
+rick@rick-linux:~$ kill -s KILL  3431
